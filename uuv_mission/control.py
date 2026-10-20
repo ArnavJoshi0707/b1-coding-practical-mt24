@@ -16,3 +16,7 @@ class PDController:
         action = 0.15 * error + 0.6 * (error - self.previous_error)
         self.previous_error = error
         return action
+
+###Carried out manual check in terminal
+### step(10, 2): error 8, previous error 0, action 6.0
+### step(10, 4): error 6, previous error 8, action -0.3
